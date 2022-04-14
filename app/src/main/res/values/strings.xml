@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UjianADL_</string>
+    <string name="textview">TextView</string>
+    <string-array name="gender">
+        <item>Pria</item>
+        <item>Wanita</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Lajang</item>
+        <item>Menikah</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
