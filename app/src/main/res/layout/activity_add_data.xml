@@ -69,13 +69,34 @@
         android:layout_height="wrap_content"
         android:text="Location (Longtitude/Latitude)" />
 
-    <EditText
-        android:id="@+id/txtLocation"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/buttonGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="find location" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hasil_longtitude"
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:layout_weight="1"
+        android:text="TextView" />
 
     <Button
         android:id="@+id/btnSendData"

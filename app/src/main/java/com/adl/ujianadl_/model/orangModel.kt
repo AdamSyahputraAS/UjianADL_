@@ -7,6 +7,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 @Entity
+
 data class orangModel (@PrimaryKey(autoGenerate = true) val id:Long = 0,
                   val nama:String, val gender:String,
                   val umur:String, val status:String) : Parcelable

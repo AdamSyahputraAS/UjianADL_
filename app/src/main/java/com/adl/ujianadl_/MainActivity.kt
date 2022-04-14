@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.adl.ujianadl_.adapter.orangAdapter
@@ -22,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         if(result.resultCode == Activity.RESULT_OK){
 
             GlobalScope.launch {
-
                 lstOrang.clear()
                 lstOrang.addAll(ArrayList(getAllData()))
 
@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         db = Room.databaseBuilder(
             applicationContext,
             orangDatabase::class.java, "orangDatabase"
